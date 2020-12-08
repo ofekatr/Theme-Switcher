@@ -41,7 +41,7 @@
 
     &:before {
       content: "";
-      border: white 2px solid;
+      border: var(--border-color) 2px solid;
       border-radius: 50%;
       width: 2rem;
       height: 2rem;

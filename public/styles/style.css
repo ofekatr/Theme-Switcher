@@ -18,8 +18,8 @@ body {
           box-sizing: border-box;
   color: var(--text);
   background: --bg;
-  -webkit-transition: background 500ms ease-in-out, color 1000 ms ease-in-out;
-  transition: background 500ms ease-in-out, color 1000 ms ease-in-out;
+  -webkit-transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -103,7 +103,7 @@ header {
 
 .dropdown-item a:before {
   content: "";
-  border: white 2px solid;
+  border: var(--border-color) 2px solid;
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
@@ -138,5 +138,48 @@ header {
   --gray4: #3ea565;
   --gray5: #005368;
   --gray6: #003d4c;
+}
+
+#dark::before {
+  background: #2a2e35;
+}
+
+#light::before {
+  background: #ffffff;
+}
+
+#solar::before {
+  background: var(--bg-solar);
+}
+
+/* Rainbow Logo Effect */
+@-webkit-keyframes color-rotate {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+@keyframes color-rotate {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+.logo:hover {
+  -webkit-animation: color-rotate 1s;
+          animation: color-rotate 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 /*# sourceMappingURL=style.css.map */

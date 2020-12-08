@@ -18,7 +18,7 @@ body {
 
   color: var(--text);
   background: (--bg);
-  transition: background 500ms ease-in-out, color 1000 ms ease-in-out;
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -39,3 +39,4 @@ header {
 @import "navbar";
 @import "dropdown";
 @import "themes";
+@import "rainbow";
