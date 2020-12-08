@@ -17,7 +17,7 @@ body {
   box-sizing: border-box;
 
   color: var(--text);
-  background: (--bg);
+  background: var(--bg);
   transition: background 500ms ease-in-out, color 1000ms ease-in-out;
   font-family: "Montserrat", sans-serif;
 }
