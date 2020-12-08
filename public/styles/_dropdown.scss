@@ -3,8 +3,8 @@
   width: 500px;
   opacity: 0;
   z-index: 2;
-  background: blue;
-  border: white 2px solid;
+  background: var(--bg-dropdown);
+  border: var(--border-color) 2px solid;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
   list-style: none;
